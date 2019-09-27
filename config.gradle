@@ -1,0 +1,17 @@
+ext {
+    android = [
+            compileSdkVersion   : 28,
+            minSdkVersion       : 14,
+            targetSdkVersion    : 28,
+            versionCode         : 1,
+            versionName         : "1.0"
+
+    ]
+
+    supportV7_Ver = "28.0.0"
+
+    retrofit_Ver = "2.2.0"
+    okHttp3_Ver = "3.8.0"
+
+
+}
