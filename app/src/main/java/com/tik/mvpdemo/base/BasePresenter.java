@@ -5,7 +5,7 @@ package com.tik.mvpdemo.base;
  **/
 public class BasePresenter<V extends IView> implements IPresenter<V> {
 
-    protected V mView;
+    public V mView;
 
     @Override
     public void attach(V view) {

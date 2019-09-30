@@ -1,9 +1,8 @@
 package com.tik.mvpdemo.presenter;
 
-import com.tik.mvpdemo.base.BasePresenter;
 import com.tik.mvpdemo.bean.BaseResponse;
+import com.tik.mvpdemo.contract.DataContract;
 import com.tik.mvpdemo.model.DataModel;
-import com.tik.mvpdemo.view.DataView;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -12,7 +11,7 @@ import retrofit2.Response;
 /**
  *
  **/
-public class DataPresenter extends BasePresenter<DataView> {
+public class DataPresenter extends DataContract.Presenter {
 
     private DataModel mModel;
 
@@ -20,6 +19,7 @@ public class DataPresenter extends BasePresenter<DataView> {
         mModel = new DataModel();
     }
 
+    @Override
     public void getData(String appKey) {
         mModel.getData(appKey, new Callback<BaseResponse>() {
             @Override

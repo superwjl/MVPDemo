@@ -9,13 +9,13 @@ import android.widget.Toast;
 import com.tik.mvpdemo.adapter.DataAdapter;
 import com.tik.mvpdemo.base.BaseActivity;
 import com.tik.mvpdemo.bean.ArticleBean;
+import com.tik.mvpdemo.contract.DataContract;
 import com.tik.mvpdemo.presenter.DataPresenter;
-import com.tik.mvpdemo.view.DataView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseActivity<DataPresenter> implements DataView {
+public class MainActivity extends BaseActivity<DataPresenter> implements DataContract.View {
 
     private static final String APP_KEY = "dbb6893ab0913b02724696504181fe39";
 
